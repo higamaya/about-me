@@ -7,15 +7,15 @@
 
 #logo-container {
 	height: 100%;
+	white-space: nowrap;
 }
-
 #logo-container img {
 	margin: 15px 0;
 	width: auto;
 	height: calc(100% - 30px);
 }
-#logo-container ul {
-	margin-left: 10px;
+#logo-container span {
+	vertical-align: top;
 }
 
 nav ul a {
@@ -31,32 +31,13 @@ p {
 }
 
 body .screen-container  {
-	height: 100vh;
+	min-height: 100vh;
 }
 
 .parallax-container {
 	min-height: 380px;
 	line-height: 0;
 	height: auto;
-}
-.parallax-container .section {
-	width: 100%;
-}
-
-@media only screen and (max-width : 992px) {
-	.parallax-container .section {
-		position: absolute;
-		top: 40%;
-	}
-	#index-banner .section {
-		top: 10%;
-	}
-}
-
-@media only screen and (max-width : 600px) {
-	#index-banner .section {
-		top: 0;
-	}
 }
 
 .parallax-background {
