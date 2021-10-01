@@ -22,12 +22,12 @@ nav ul a {
 	color: #444;
 }
 
-p {
-	line-height: 2rem;
+nav .sidenav-trigger {
+	margin-left: 0;
 }
 
-.sidenav-trigger {
-	color: #26a69a;
+p {
+	line-height: 2rem;
 }
 
 body .screen-container  {
