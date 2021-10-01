@@ -53,8 +53,11 @@ body .screen-container  {
 	font-size: inherit;
 }
 
-#scroll-down-button-blok {
+#scroll-down-button-block {
 	margin-top: 3rem;
+}
+#scroll-down-button-block i {
+	border-radius: 50%;
 }
 
 footer.page-footer {
