@@ -5,9 +5,18 @@
 	color: #40a798;
 }
 
+.nowrap {
+	white-space: nowrap;
+}
+
+i.fab.fa-twitter-square {
+	display: inline;
+	vertical-align: middle;
+	color: #1d9bf0;
+}
+
 #logo-container {
 	height: 100%;
-	white-space: nowrap;
 }
 #logo-container img {
 	margin: 15px 0;
