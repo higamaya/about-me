@@ -35,8 +35,27 @@ nav .sidenav-trigger {
 	margin-left: 0;
 }
 
-p {
-	line-height: 2rem;
+.floating-menu-target {
+	position: relative;
+}
+.floating-menu-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 15%;
+	z-index: 10;
+}
+.floating-menu {
+	position: sticky;
+	top: calc(56px + 5px);
+	margin: 0 5px 0 5px;
+	padding: 0 0 0 5px;
+}
+@media only screen and (min-width: 601px) {
+	.floating-menu {
+		top: calc(64px + 5px);
+	}
 }
 
 body .screen-container  {
