@@ -23,7 +23,7 @@
 </head>
 <body>
 	<div class="navbar-fixed">
-		<nav class="white" role="navigation">
+		<nav class="white">
 			<div class="container nav-wrapper">
 				<a id="logo-container" href="#" class="brand-logo nowrap">
 					<img width="96" height="96" src="assets/images/logo96x96.png" alt="brand logo"/>
@@ -32,14 +32,21 @@
 				<ul class="right">
 					<li><a href="https://twitter.com/higama_ya" target="_blank" rel="noopener"><i class="fab fa-twitter-square"></i></a></li>
 				</ul>
-
-				<ul id="nav-mobile" class="sidenav">
-					<li><a href="#">Navbar Link</a></li>
-				</ul>
-				<a href="#" data-target="nav-mobile" class="sidenav-trigger brand-color-text"><i class="material-icons">menu</i></a>
+				<a href="#nolink" data-target="nav-mobile" class="sidenav-trigger brand-color-text"><i class="material-icons">menu</i></a>
 			</div>
 		</nav>
 	</div>
+
+	<ul id="nav-mobile" class="sidenav">
+		<li><a href="#index-banner">Top</a></li>
+		<li><a href="#index-profile">Profile</a></li>
+		<li><a href="#index-languages">Languages</a></li>
+		<li><a href="#index-skills">Skills</a></li>
+		<li><a href="#index-work-experience">Work Experience</a></li>
+		<li><a href="#index-additional-information">Additional Information</a></li>
+		<li><a href="#index-about-this-site">About This Site</a></li>
+		<li><a href="#index-contact-information">Contact Information</a></li>
+	</ul>
 
 	<div id="index-banner" class="screen-container valign-wrapper scrollspy brand-color white-text">
 		<div class="container">
@@ -58,7 +65,7 @@
 	<div class="floating-menu-target">
 
 		<div class="floating-menu-container">
-			<div class="floating-menu z-depth-1 hide-on-med-and-down">
+			<div class="floating-menu white z-depth-1 hide-on-med-and-down">
 				<ul class="section table-of-contents">
 					<li><a href="#index-banner">Top</a></li>
 					<li><a href="#index-profile">Profile</a></li>
