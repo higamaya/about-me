@@ -9,7 +9,10 @@
 	white-space: nowrap;
 }
 
-i.fab.fa-twitter-square {
+#twitter-link {
+	transform: translateX(15px);
+}
+#twitter-link i.fab.fa-twitter-square {
 	display: inline;
 	vertical-align: middle;
 	color: #1d9bf0;
@@ -71,28 +74,28 @@ body .screen-container  {
 }
 
 .parallax-container {
-	min-height: 380px;
-	line-height: 0;
 	height: auto;
 }
-
 .parallax-background {
 	width: 100%;
 	height: 210vh;
 	background-image: url("../images/background.png");
 }
 
-#scroll-down-button-block {
-	margin-top: 3rem;
+#index-banner {
+	position: relative;
 }
-
-footer.page-footer {
-	margin: 0;
-}
-
 #last-updated-date {
 	position: absolute;
 	bottom: 0;
 	width: 100%;
 	text-align: center;
+}
+
+#scroll-down-button-block {
+	margin: 3rem 0;
+}
+
+footer.page-footer {
+	margin: 0;
 }
