@@ -4,6 +4,7 @@
 		$('.sidenav').sidenav();
 		$('.scrollspy').scrollSpy();
 		$('.parallax').parallax();
+		$('.tooltipped').tooltip();
 	});
 	// Setup smooth scroll for in-page links
 	$(function() {
