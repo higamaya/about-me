@@ -1,0 +1,25 @@
+{
+  "name": "about-me",
+  "version": "1.0.0",
+  "description": "A webpage of portfolio for Higama-ya",
+  "main": "index.html",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "chart.js": "^3.5.1",
+    "materialize-css": "^1.0.0-rc.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/higamaya/about-me.git"
+  },
+  "author": "Higama-ya",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/higamaya/about-me/issues"
+  },
+  "homepage": "https://github.com/higamaya/about-me#readme"
+}
