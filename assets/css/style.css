@@ -85,6 +85,12 @@ body .screen-container  {
 #index-banner {
 	position: relative;
 }
+#index-banner-name,
+#index-banner-description,
+#index-banner-button {
+	visibility: hidden;
+}
+
 #last-updated-date {
 	position: absolute;
 	bottom: 0;

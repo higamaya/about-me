@@ -55,12 +55,12 @@
 	<div id="index-banner" class="screen-container valign-wrapper scrollspy brand-color white-text">
 		<div class="container">
 			<div class="section">
-				<h1 class="header center">HIGAMA屋</h1>
+				<h1 id="index-banner-name" class="header center">HIGAMA屋</h1>
 				<div class="row center">
-					<h5 class="header col s12 light">A freelance software developer</h5>
+					<h5 id="index-banner-description" class="header col s12 light">A freelance software developer</h5>
 				</div>
 				<div id="scroll-down-button-block" class="row center">
-					<a class="tooltipped" data-position="top" data-tooltip="Please check my profile!" href="#index-profile">
+					<a id="index-banner-button" class="tooltipped" data-position="top" data-tooltip="Please check my profile!" href="#index-profile">
 						<i class="material-icons white-text large circle hoverable waves-effect waves-light">arrow_circle_down</i>
 					</a>
 				</div>
@@ -161,8 +161,10 @@
 		</div>
 	</footer>
 
+	<script>window.module = window.module || [];</script>
 	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 	<script src="assets/js/materialize.js"></script>
+	<script src="assets/js/anime.js"></script>
 	<script src="assets/js/init.js"></script>
 </body>
 </html>
