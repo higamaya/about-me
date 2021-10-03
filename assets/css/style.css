@@ -82,17 +82,17 @@ body .screen-container  {
 	background-image: url("../images/background.png");
 }
 
-.icon-block {
-	padding: 0 15px;
-}
-.icon-block .material-icons {
-	font-size: inherit;
-}
-
 #scroll-down-button-block {
 	margin-top: 3rem;
 }
 
 footer.page-footer {
 	margin: 0;
+}
+
+#last-updated-date {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
 }
