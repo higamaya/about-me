@@ -52,17 +52,21 @@
 		<li><a href="#index-contact-information">Contact Information</a></li>
 	</ul>
 
-	<div id="index-banner" class="screen-container valign-wrapper scrollspy brand-color white-text">
+	<div id="index-banner" class="screen-container scrollspy brand-color white-text">
 		<div class="container">
 			<div class="section">
 				<h1 id="index-banner-name" class="header center">HIGAMA屋</h1>
-				<div class="row center">
-					<h5 id="index-banner-description" class="header col s12 light">A freelance software developer</h5>
+				<div class="row">
+					<div class="col s12 center">
+						<h5 id="index-banner-description" class="header light">A freelance software developer</h5>
+					</div>
 				</div>
-				<div id="scroll-down-button-block" class="row center">
-					<a id="index-banner-button" class="tooltipped" data-position="top" data-tooltip="Please check my profile!" href="#index-profile">
-						<i class="material-icons white-text large circle hoverable waves-effect waves-light">arrow_circle_down</i>
-					</a>
+				<div id="scroll-down-button-block" class="row">
+					<div class="col s12 center">
+						<a id="index-banner-button" class="tooltipped" data-position="top" data-tooltip="Please check my profile!" href="#index-profile">
+							<i class="material-icons white-text large circle hoverable waves-effect waves-light">arrow_circle_down</i>
+						</a>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -86,7 +90,7 @@
 			</div>
 		</div>
 	
-		<div id="index-profile" class="screen-container valign-wrapper scrollspy parallax-container">
+		<div id="index-profile" class="screen-container scrollspy parallax-container">
 			<div class="parallax"><img class="parallax-background" src="assets/images/invisible.png" /></div>
 			<div class="container">
 				<div class="section">
@@ -95,15 +99,42 @@
 			</div>
 		</div>
 
-		<div id="index-languages" class="screen-container valign-wrapper scrollspy">
+		<div id="index-languages" class="screen-container scrollspy">
 			<div class="container">
 				<div class="section">
 					<h2 class="header center">Languages</h2>
+					<div class="row">
+						<div class="col s12 m6 center vertical-center">
+							<canvas id="chart-languages" width="280" height="280"></canvas>
+							<script id="chart-languages-data" type="application/json">
+								{
+									"Java" : 5,
+									"C/C++" : 5,
+									"PHP" : 2,
+									"Python" : 1,
+									"Visual Basic" : 3,
+									"SQL" : 4,
+									"JavaScript" : 3,
+									"HTML/CSS" : 4
+								}
+							</script>
+						</div>
+						<div class="col s12 m6 center vertical-center">
+							<table class="fit">
+								<tr><th class="center">レベル</th><th class="center">実績</th><th class="languages-level-description">評価の目安</th></tr>
+								<tr><td class="center">5</td><td class="center"><i class="material-icons">done</i></td><td class="languages-level-description">マスター</td></tr>
+								<tr><td class="center">4</td><td class="center"><i class="material-icons">done</i></td><td class="languages-level-description">自由に駆使できる</td></tr>
+								<tr id="languages-level-border"><td class="center">3</td><td class="center"><i class="material-icons">done</i></td><td class="languages-level-description">実務で使える</td></tr>
+								<tr><td class="center">2</td><td class="center">－</td><td class="languages-level-description">それなりに使える</td></tr>
+								<tr><td class="center">1</td><td class="center">－</td><td class="languages-level-description">軽く触ったことがある</td></tr>
+							</table>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
 
-		<div id="index-skills" class="screen-container valign-wrapper scrollspy parallax-container">
+		<div id="index-skills" class="screen-container scrollspy parallax-container">
 			<div class="parallax"><img class="parallax-background" src="assets/images/invisible.png" /></div>
 			<div class="container">
 				<div class="section">
@@ -112,7 +143,7 @@
 			</div>
 		</div>
 
-		<div id="index-work-experience" class="screen-container valign-wrapper scrollspy">
+		<div id="index-work-experience" class="screen-container scrollspy">
 			<div class="container">
 				<div class="section">
 					<h2 class="header center">Work Experience</h2>
@@ -120,7 +151,7 @@
 			</div>
 		</div>
 
-		<div id="index-additional-information" class="screen-container valign-wrapper scrollspy parallax-container">
+		<div id="index-additional-information" class="screen-container scrollspy parallax-container">
 			<div class="parallax"><img class="parallax-background" src="assets/images/invisible.png" /></div>
 			<div class="container">
 				<div class="section">
@@ -129,7 +160,7 @@
 			</div>
 		</div>
 
-		<div id="index-about-this-site" class="screen-container valign-wrapper scrollspy">
+		<div id="index-about-this-site" class="screen-container scrollspy">
 			<div class="container">
 				<div class="section">
 					<h2 class="header center">About This Site</h2>
@@ -137,7 +168,7 @@
 			</div>
 		</div>
 
-		<div id="index-contact-information" class="screen-container valign-wrapper scrollspy parallax-container">
+		<div id="index-contact-information" class="screen-container scrollspy parallax-container">
 			<div class="parallax"><img class="parallax-background" src="assets/images/invisible.png" /></div>
 			<div class="container">
 				<div class="section">
@@ -150,8 +181,8 @@
 
 	<footer class="page-footer brand-color white-text">
 		<div class="container">
-			<div class="row">
-				<h3 class="header center">Thank you for your visit.</h3>
+			<div class="section">
+				<h3 id="footer-thanks-message" class="header center">Thank you for your visit.</h3>
 			</div>
 		</div>
 		<div class="footer-copyright">
@@ -164,6 +195,7 @@
 	<script src="assets/js/jquery.min.js"></script>
 	<script src="assets/js/materialize.min.js"></script>
 	<script src="assets/js/anime.min.js"></script>
+	<script src="assets/js/chart.min.js"></script>
 	<script src="assets/js/init.js"></script>
 </body>
 </html>
