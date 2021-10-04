@@ -66,13 +66,17 @@ nav .sidenav-trigger {
 
 body .screen-container  {
 	display: flex;
-	align-items: center;
+	flex-direction: column;
 	min-height: calc(100vh - 56px);
 }
 @media only screen and (min-width: 601px) {
 	body .screen-container  {
 		min-height: calc(100vh - 64px);
 	}
+}
+.screen-container-content {
+	margin-top: auto;
+	margin-bottom: auto;
 }
 
 .parallax-container {
@@ -87,10 +91,14 @@ body .screen-container  {
 .row {
 	display: flex;
 	flex-wrap: wrap;
+	align-items: stretch;
 }
 .row .col {
 	display: flex;
-	align-self: stretch;
+	align-items: flex-start;
+}
+.row .col:not(*[class*="offset-"]) {
+	margin-left: 0;
 }
 .row .col.center {
 	justify-content: space-around;
