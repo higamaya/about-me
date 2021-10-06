@@ -105,7 +105,8 @@
 						ticks: {
 							stepSize: 1,
 							z: 1,
-							showLabelBackdrop: false,
+							showLabelBackdrop: true,
+							backdropColor: 'rgba(255, 255, 255, 0.5)',
 							font: {
 								size: 13
 							}
