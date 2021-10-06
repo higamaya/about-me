@@ -106,7 +106,7 @@
 							stepSize: 1,
 							z: 1,
 							showLabelBackdrop: true,
-							backdropColor: 'rgba(255, 255, 255, 0.5)',
+							backdropColor: 'rgba(255, 255, 255, 0.8)',
 							font: {
 								size: 13
 							}
