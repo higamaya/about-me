@@ -7,25 +7,8 @@
 		$('.parallax').parallax();
 		$('.collapsible').collapsible({accordion: false});
 	});
-	// Setup smooth scroll for in-page links
-	$(function () {
-		$('a[href^="#"]').on('click', function () {
-			let href = $(this).attr('href');
-			let target = $(href == '#' || href == '' ? 'html' : href);
-			if (target.length > 0) {
-				anime({
-					targets: [document.documentElement, document.body],
-					scrollTop: target.offset().top - $('.navbar-fixed').height(),
-					duration: 700,
-					easing: 'easeInCubic'
-				});
-				M.Sidenav.getInstance($('.sidenav')).close();
-				return false;
-			}
-		});
-	});
 	// Banner animation
-	$(function () {
+	var doBannerAnimation = function () {
 		// Animate the name
 		let name = $('#index-banner-name');
 		name.html(name.text().replace(/\S/g, '<span class="anime-letter" style="opacity: 0;">$&</span>'));
@@ -61,6 +44,30 @@
 			translateX: [-300, 0],
 			duration: 1500,
 			delay: 3150
+		});
+	};
+	doBannerAnimation();
+	// Setup smooth scroll for in-page links
+	$(function () {
+		$('a[href^="#"]').on('click', function () {
+			let href = $(this).attr('href');
+			let target = $(isTop = href == '#' || href == '' ? 'html' : href);
+			if (target.length > 0) {
+				var scrollTop = target.offset().top - $('.navbar-fixed').height();
+				anime({
+					targets: [document.documentElement, document.body],
+					scrollTop: scrollTop,
+					duration: 700,
+					easing: 'easeInCubic',
+					complete: function(anim) {
+						if (scrollTop <= 0) {
+							doBannerAnimation();
+						}
+					}
+				});
+				M.Sidenav.getInstance($('.sidenav')).close();
+				return false;
+			}
 		});
 	});
 	// Draw radar chart for languages
