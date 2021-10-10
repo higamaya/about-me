@@ -2,9 +2,10 @@
 	// Setup Materialize CSS
 	$(function () {
 		$('.sidenav').sidenav();
+		$('.tooltipped').tooltip();
 		$('.scrollspy').scrollSpy();
 		$('.parallax').parallax();
-		$('.tooltipped').tooltip();
+		$('.collapsible').collapsible({accordion: false});
 	});
 	// Setup smooth scroll for in-page links
 	$(function () {

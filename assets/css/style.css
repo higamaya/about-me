@@ -13,6 +13,13 @@
 	white-space: nowrap;
 }
 
+.collapsible {
+	width: 100%;
+}
+.collapsible-body {
+	padding: 1rem;
+}
+
 #twitter-link {
 	transform: translateX(15px);
 }
@@ -133,6 +140,14 @@ table.fit {
 	bottom: 0;
 	width: 100%;
 	text-align: center;
+}
+
+.history tr td {
+	vertical-align: baseline;
+}
+
+.history tr td:first-child {
+	white-space: nowrap;
 }
 
 .languages-level-description {
