@@ -9,6 +9,10 @@
 	color: #40a798;
 }
 
+.container {
+	max-width: 900px;
+}
+
 .nowrap {
 	white-space: nowrap;
 }
