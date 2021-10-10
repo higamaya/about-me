@@ -93,7 +93,7 @@
 		<div id="index-profile" class="screen-container scrollspy parallax-container">
 			<div class="parallax"><img class="parallax-background" src="assets/images/invisible.png" /></div>
 			<div class="container screen-container-header">
-				<h2 class="header center">Profile</h2>
+				<h3 class="header center brand-color-text">Profile</h3>
 			</div>
 			<div class="container screen-container-content">
 				<div class="section">
@@ -176,7 +176,7 @@
 
 		<div id="index-languages" class="screen-container scrollspy">
 			<div class="container screen-container-header">
-				<h2 class="header center">Languages</h2>
+				<h3 class="header center brand-color-text">Languages</h3>
 			</div>
 			<div class="container screen-container-content">
 				<div class="section">
@@ -195,6 +195,7 @@
 					<div class="row">
 						<div class="col s12 m6 center vertical-center">
 							<canvas id="chart-languages" width="280" height="280"></canvas>
+							<!-- A dataset to be loaded from JavaScript to draw the radar chart. -->
 							<script id="chart-languages-data" type="application/json">
 								{
 									"Java" : 5,
@@ -211,9 +212,9 @@
 						<div class="col s12 m6 center vertical-center">
 							<table class="fit">
 								<tr><th class="center">レベル</th><th class="center">実績</th><th class="languages-level-description">評価の目安</th></tr>
-								<tr><td class="center">5</td><td class="center"><i class="material-icons">done</i></td><td class="languages-level-description">マスター</td></tr>
-								<tr><td class="center">4</td><td class="center"><i class="material-icons">done</i></td><td class="languages-level-description">自由に駆使できる</td></tr>
-								<tr id="languages-level-border"><td class="center">3</td><td class="center"><i class="material-icons">done</i></td><td class="languages-level-description">実務で使える</td></tr>
+								<tr><td class="center">5</td><td class="center"><i class="material-icons">check</i></td><td class="languages-level-description">マスター</td></tr>
+								<tr><td class="center">4</td><td class="center"><i class="material-icons">check</i></td><td class="languages-level-description">自由に駆使できる</td></tr>
+								<tr id="languages-level-border"><td class="center">3</td><td class="center"><i class="material-icons">check</i></td><td class="languages-level-description">実務で使える</td></tr>
 								<tr><td class="center">2</td><td class="center">－</td><td class="languages-level-description">それなりに使える</td></tr>
 								<tr><td class="center">1</td><td class="center">－</td><td class="languages-level-description">軽く触ったことがある</td></tr>
 							</table>
@@ -238,7 +239,7 @@
 		<div id="index-my-tech-stack" class="screen-container scrollspy parallax-container">
 			<div class="parallax"><img class="parallax-background" src="assets/images/invisible.png" /></div>
 			<div class="container screen-container-header">
-				<h2 class="header center">My Tech Stack</h2>
+				<h3 class="header center brand-color-text">My Tech Stack</h3>
 			</div>
 			<div class="container screen-container-content">
 				<div class="section">
@@ -246,9 +247,15 @@
 						<div class="col s12 m10 offset-m1 l8 offset-l2">
 							<div>
 								<p>
-									使用経験のある技術・ツール等の一覧です。<a href="https://stackshare.io/higamaya/my-stack" target="_blank" rel="noopener">StackShareで作成</a>したものを埋め込みました。
+									使用経験のある技術・ツール等の一覧です。<a href="https://stackshare.io/higamaya/my-stack" target="_blank" rel="noopener">StackShareで作成したもの</a>を埋め込みました。
 								</p>
-								<p>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col s12 m10 offset-m1">
+							<div>
+								<p id="my-tech-stack" class="z-depth-1 brand-color">
 									<a frameborder="0" data-theme="light" data-layers="1,2,3,4" data-stack-embed="true" href="https://embed.stackshare.io/stacks/embed/7980cfa13910255ca623083ff86a47"/></a><script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
 								</p>
 							</div>
@@ -260,7 +267,7 @@
 
 		<div id="index-work-experience" class="screen-container scrollspy">
 			<div class="container screen-container-header">
-				<h2 class="header center">Work Experience</h2>
+				<h3 class="header center brand-color-text">Work Experience</h3>
 			</div>
 			<div class="container screen-container-content">
 				<div class="section">
@@ -283,7 +290,7 @@
 		<div id="index-additional-information" class="screen-container scrollspy parallax-container">
 			<div class="parallax"><img class="parallax-background" src="assets/images/invisible.png" /></div>
 			<div class="container screen-container-header">
-				<h2 class="header center">Additional Information</h2>
+				<h3 class="header center brand-color-text">Additional Information</h3>
 			</div>
 			<div class="container screen-container-content">
 				<div class="section">
@@ -298,7 +305,6 @@
 						</div>
 					</div>
 				</div>
-				<div class="divider"></div>
 				<div class="section">
 					<div class="row">
 						<div class="col s12 m10 offset-m1 l8 offset-l2">
@@ -314,20 +320,19 @@
 						</div>
 					</div>
 				</div>
-				<div class="divider"></div>
 				<div class="section">
 					<div class="row">
 						<div class="col s12 m10 offset-m1 l8 offset-l2">
 							<div>
-								<h5 class="header center">“ソフトウェア開発者”に込めた想い</h5>
+								<h5 class="header center">“ソフトウェア開発者” に込めた想い</h5>
 								<p>
-									私は意図的に“ソフトウェア開発者”と名乗っています。これには、単純にプログラミングが大好きで、生涯プログラマーでいたい、という願いが含まれています。
+									私は意図的に “ソフトウェア開発者” と名乗っています。これには、単純にプログラミングが大好きで、生涯プログラマーでいたい、という願いが含まれています。
 								</p>
 								<p>
-									もちろん、ただコードを書くだけの人になるつもりはなく、専門知識を駆使して顧客の課題を解決する技術者として観点は大事にしたい。そういう立ち位置だと、“ITエンジニア”とか“システムエンジニア”なんて呼び方が一般的だと思いますが、“エンジニア”って名乗るのは自分には高尚すぎて少々照れくさい。かといって“プログラマー”では狭すぎる。
+									もちろん、ただコードを書くだけの人になるつもりはなく、専門知識を駆使して顧客の課題を解決する技術者としての観点は大事にしたい。そういう立ち位置だと、“ITエンジニア” とか “システムエンジニア” なんて呼び方が一般的だと思いますが、“エンジニア” って名乗るのは自分には高尚すぎて少々照れくさい。かといって “プログラマー” では狭すぎる。
 								</p>
 								<p>
-									そんなこんなで色々と考えた結果、『プログラミングの技術を活かして人の役に立つもの（ソフトウェア）を作りたい（開発したい）』という想いを込めて“ソフトウェア開発者”と名乗ることにしました。
+									そんなこんなで色々と考えた結果、『プログラミングスキルを活かして人の役に立つもの（ソフトウェア）を作りたい（開発したい）』という想いを込めて “ソフトウェア開発者” と名乗ることにしました。
 								</p>
 							</div>
 						</div>
@@ -338,10 +343,48 @@
 
 		<div id="index-about-this-site" class="screen-container scrollspy">
 			<div class="container screen-container-header">
-				<h2 class="header center">About This Site</h2>
+				<h3 class="header center brand-color-text">About This Site</h3>
 			</div>
 			<div class="container screen-container-content">
 				<div class="section">
+					<div class="row">
+						<div class="col s12 m10 offset-m1 l8 offset-l2">
+							<div>
+								<h5 class="header center">CSSフレームワーク</h5>
+								<p>
+									本サイトのUIデザインは、<a href="https://materializecss.com/" target="_blank" rel="noopener">Materialize</a>というCSSフレームワークを使用して作成しました。Materializeを選んだ理由は以下の2つです。
+								</p>
+								<ul class="collection">
+									<li class="collection-item">
+										マテリアルデザインに基づくCSSフレームワークとして最も人気がある。（<a href="https://2020.stateofcss.com/ja-JP/technologies/css-frameworks/" target="_blank" rel="noopener">The State of CSS 2020</a> で前年から2つ順位を上げて5位にランクインしている。）
+									</li>
+									<li class="collection-item">
+										CSSフレームワークを使ってみたかった。（Bootstrapなど、CSSフレームワークの存在は知っていたが使ったことがなかった。）
+									</li>
+								</ul>
+								<p>
+									制作にあたり、Materializeの様々な機能を試すと同時に、シンプルで分かりやすいデザインを心がけました。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section">
+					<div class="row">
+						<div class="col s12 m10 offset-m1 l8 offset-l2">
+							<div>
+								<h5 class="header center">その他のライブラリ</h5>
+								<p>
+									Materializeの他に、以下のライブラリを使用しました。
+								</p>
+								<table>
+									<tr><th>ライブラリ</th><th>使用箇所</th></tr>
+									<tr><td><a href="https://animejs.com/" target="_blank" rel="noopener">anime.js</a></td><td>ページ冒頭のアニメーション<br/>ページ内リンクのスムーススクロール</td></tr>
+									<tr><td><a href="https://www.chartjs.org/" target="_blank" rel="noopener">Chart.js</a></td><td>Languagesセクションのレーダーチャート</td></tr>
+								</table>
+							</div>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
@@ -349,7 +392,7 @@
 		<div id="index-contact-information" class="screen-container scrollspy parallax-container">
 			<div class="parallax"><img class="parallax-background" src="assets/images/invisible.png" /></div>
 			<div class="container screen-container-header">
-				<h2 class="header center">Contact Information</h2>
+				<h3 class="header center brand-color-text">Contact Information</h3>
 			</div>
 			<div class="container screen-container-content">
 				<div class="section">
