@@ -121,6 +121,9 @@ body .screen-container  {
 .row .col.vertical-center {
 	align-items: center;
 }
+.row .col div {
+	width: 100%;
+}
 
 table.fit {
 	width: auto;
