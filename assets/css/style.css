@@ -175,12 +175,15 @@ table.fit {
 #index-banner-button {
 	visibility: hidden;
 }
+#index-banner-description {
+	font-size: 1.7rem;
+}
 #index-banner-button > .pulse::before {
 	background-color: rgba(255, 255, 255, 0.17);
 }
 
-#scroll-down-button-block {
-	margin: 3rem 0;
+.index-banner-block {
+	margin: 3.2rem 0;
 }
 
 #last-updated-date {
@@ -211,8 +214,8 @@ table.fit {
 	padding: 5px;
 }
 
-#footer-thanks-message {
-	margin: 50px 0;
+.footer-thanks-message {
+	margin: 2rem 0 4rem 0;
 }
 
 footer.page-footer {
