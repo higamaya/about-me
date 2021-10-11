@@ -24,13 +24,27 @@
 	padding: 1rem;
 }
 
-#twitter-link {
+.twitter-icon {
+	color: #1d9bf0;
+}
+
+#twitter-link-nav {
 	transform: translateX(15px);
 }
-#twitter-link i.fab.fa-twitter-square {
+#twitter-link-nav i.fab.fa-twitter-square {
 	display: inline;
 	vertical-align: middle;
-	color: #1d9bf0;
+}
+
+#twitter-link-contact {
+	display: inline-block;
+	margin: 5rem 0;
+	padding: 1rem 2rem;
+	border-radius: 2rem;
+	background-color: #1d9bf0;
+	color: #fff;
+	font-size: 2rem;
+	line-height: 1;
 }
 
 #logo-container {
@@ -90,8 +104,11 @@ body .screen-container  {
 	}
 }
 .screen-container-content {
+	display: flex;
+	flex-direction: column;
 	margin-top: auto;
 	margin-bottom: auto;
+	height: auto;
 }
 
 .parallax-container {
@@ -116,7 +133,7 @@ body .screen-container  {
 	margin-left: 0;
 }
 .row .col.center {
-	justify-content: space-around;
+	justify-content: space-evenly;
 }
 .row .col.vertical-center {
 	align-items: center;
