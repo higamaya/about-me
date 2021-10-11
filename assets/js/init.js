@@ -55,6 +55,7 @@
 	// Setup smooth scroll for in-page links
 	$(function () {
 		$('a[href^="#"]').on('click', function () {
+			var tooltip = this.classList.contains('tooltipped') ? M.Tooltip.getInstance($(this)) : null;
 			let href = $(this).attr('href');
 			let target = $(isTop = href == '#' || href == '' ? 'html' : href);
 			if (target.length > 0) {
@@ -65,6 +66,9 @@
 					duration: 700,
 					easing: 'easeInCubic',
 					complete: function(anim) {
+						if (tooltip) {
+							tooltip.close();
+						}
 						if (scrollTop <= 0) {
 							doBannerAnimation();
 						}
