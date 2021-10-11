@@ -84,10 +84,17 @@ nav ul a {
 	color: #444;
 }
 
-.floating-menu-target {
+nav .sidenav-trigger {
+	margin-left: 0;
+}
+.sidenav {
+	width: auto;
+}
+
+#floating-menu-target {
 	position: relative;
 }
-.floating-menu-container {
+#floating-menu-container {
 	position: absolute;
 	top: 0;
 	right: 0;
@@ -95,23 +102,43 @@ nav ul a {
 	width: 15%;
 	z-index: 10;
 }
-.floating-menu {
+#floating-menu {
 	position: sticky;
 	top: calc(56px + 15px);
 	margin: 0 5px 0 5px;
 	padding: 0 0 0 5px;
 }
 @media only screen and (min-width: 601px) {
-	.floating-menu {
+	#floating-menu {
 		top: calc(64px + 15px);
 	}
 }
 
-nav .sidenav-trigger {
-	margin-left: 0;
+#return-to-top-button-target {
+	position: sticky;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 0;
+	z-index: 20;
 }
-.sidenav {
-	width: auto;
+#return-to-top-button-container {
+	position: relative;
+	height: 0;
+}
+#return-to-top-button {
+	position: absolute;
+	margin: 10px;
+	right: 0;
+	bottom: 0;
+}
+@media only screen and (max-width: 600px) {
+	#return-to-top-button-container {
+		width: 100%;
+	}
+	#return-to-top-button {
+		margin: 5px;
+	}
 }
 
 body .screen-container  {
@@ -169,6 +196,7 @@ table.fit {
 
 #index-banner {
 	position: relative;
+	z-index: 30;
 }
 #index-banner-name,
 #index-banner-description,
@@ -176,14 +204,22 @@ table.fit {
 	visibility: hidden;
 }
 #index-banner-description {
-	font-size: 1.7rem;
+	font-size: 2rem;
 }
 #index-banner-button > .pulse::before {
 	background-color: rgba(255, 255, 255, 0.17);
 }
 
 .index-banner-block {
-	margin: 3.2rem 0;
+	margin: 5rem 0;
+}
+@media only screen and (max-width: 600px) {
+	#index-banner-description {
+		font-size: 1.3rem;
+	}
+	.index-banner-block {
+		margin: 3.2rem 0;
+	}
 }
 
 #last-updated-date {

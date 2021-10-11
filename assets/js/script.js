@@ -57,7 +57,7 @@
 		$('a[href^="#"]').on('click', function () {
 			var tooltip = this.classList.contains('tooltipped') ? M.Tooltip.getInstance($(this)) : null;
 			let href = $(this).attr('href');
-			let target = $(isTop = href == '#' || href == '' ? 'html' : href);
+			let target = $(isTop = href == '#' ? 'html' : href);
 			if (target.length > 0) {
 				var scrollTop = target.offset().top - $('.navbar-fixed').height();
 				anime({
@@ -141,7 +141,8 @@
 						borderWidth: 2,
 						fill: true,
 						borderColor: 'rgb(64, 167, 152)',
-						backgroundColor: 'rgba(64, 167, 152, 0.2)'					},
+						backgroundColor: 'rgba(64, 167, 152, 0.2)'
+					},
 					point : {
 						borderColor: '#fff',
 						backgroundColor: 'rgb(64, 167, 152)'
