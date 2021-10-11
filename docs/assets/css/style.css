@@ -1,0 +1,259 @@
+.material-icons {
+	font-size: inherit;
+}
+
+.brand-color {
+	background-color: #40a798;
+}
+.brand-color-text {
+	color: #40a798;
+}
+
+.container {
+	max-width: 900px;
+}
+
+.nowrap {
+	white-space: nowrap;
+}
+
+.collapsible {
+	width: 100%;
+}
+.collapsible-header {
+	display: block;
+	color: rgba(80, 80, 80, 0.85);
+}
+.collapsible-header * {
+	vertical-align: middle;
+}
+.collapsible-header:hover {
+	background-color: #f0f0f0;
+	color: inherit;
+}
+li.active > .collapsible-header {
+	color: inherit;
+}
+li.active > .collapsible-header > .expand_more {
+	display: none;
+}
+li:not(.active) > .collapsible-header > .expand_less {
+	display: none;
+}
+.collapsible-body {
+	background-color: rgba(255, 255, 255, 0.67);
+	padding: 1rem;
+}
+
+.twitter-icon {
+	color: #1d9bf0;
+}
+
+#twitter-link-nav {
+	transform: translateX(15px);
+}
+#twitter-link-nav i.fab.fa-twitter-square {
+	display: inline;
+	vertical-align: middle;
+}
+
+#twitter-link-contact {
+	display: inline-block;
+	margin-top: 5rem;
+	padding: 1rem 2rem;
+	border-radius: 1.85rem;
+	background-color: #1d9bf0;
+	color: #fff;
+	font-size: 1.7rem;
+	line-height: 1;
+}
+
+#logo-container {
+	height: 100%;
+}
+#logo-container img {
+	margin: 15px 0;
+	width: auto;
+	height: calc(100% - 30px);
+}
+#logo-container span {
+	vertical-align: top;
+}
+
+nav ul a {
+	color: #444;
+}
+
+nav .sidenav-trigger {
+	margin-left: 0;
+}
+.sidenav {
+	width: auto;
+}
+
+#floating-menu-target {
+	position: relative;
+}
+#floating-menu-container {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 15%;
+	z-index: 10;
+}
+#floating-menu {
+	position: sticky;
+	top: calc(56px + 15px);
+	margin: 0 5px 0 5px;
+	padding: 0 0 0 5px;
+}
+@media only screen and (min-width: 601px) {
+	#floating-menu {
+		top: calc(64px + 15px);
+	}
+}
+
+#return-to-top-button-target {
+	position: sticky;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 0;
+	z-index: 20;
+}
+#return-to-top-button-container {
+	position: relative;
+	height: 0;
+}
+#return-to-top-button {
+	position: absolute;
+	margin: 10px;
+	right: 0;
+	bottom: 0;
+}
+@media only screen and (max-width: 600px) {
+	#return-to-top-button-container {
+		width: 100%;
+	}
+	#return-to-top-button {
+		margin: 5px;
+	}
+}
+
+body .screen-container  {
+	display: flex;
+	flex-direction: column;
+	min-height: calc(100vh - 56px);
+}
+@media only screen and (min-width: 601px) {
+	body .screen-container  {
+		min-height: calc(100vh - 64px);
+	}
+}
+.screen-container-content {
+	display: flex;
+	flex-direction: column;
+	margin-top: auto;
+	margin-bottom: auto;
+	height: auto;
+}
+
+.parallax-container {
+	height: auto;
+}
+.parallax-background {
+	width: 100%;
+	height: 200%;
+	background-image: url("../images/background.png");
+}
+
+.row {
+	display: flex;
+	flex-wrap: wrap;
+	align-items: stretch;
+}
+.row .col {
+	display: flex;
+	align-items: flex-start;
+}
+.row .col:not(*[class*="offset-"]) {
+	margin-left: 0;
+}
+.row .col.center {
+	justify-content: space-evenly;
+}
+.row .col.vertical-center {
+	align-items: center;
+}
+.row .col div {
+	width: 100%;
+}
+
+table.fit {
+	width: auto;
+}
+
+#index-banner {
+	position: relative;
+	z-index: 30;
+}
+#index-banner-name,
+#index-banner-description,
+#index-banner-button {
+	visibility: hidden;
+}
+#index-banner-description {
+	font-size: 2rem;
+}
+#index-banner-button > .pulse::before {
+	background-color: rgba(255, 255, 255, 0.17);
+}
+
+.index-banner-block {
+	margin: 5rem 0;
+}
+@media only screen and (max-width: 600px) {
+	#index-banner-description {
+		font-size: 1.3rem;
+	}
+	.index-banner-block {
+		margin: 3.2rem 0;
+	}
+}
+
+#last-updated-date {
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	text-align: center;
+}
+
+.history tr td {
+	vertical-align: baseline;
+}
+
+.history tr td:first-child {
+	white-space: nowrap;
+}
+
+.languages-level-description {
+	padding-left: 10px;
+}
+
+#languages-level-border {
+	border-bottom-color: rgba(255, 0, 0, 0.5);
+}
+
+#my-tech-stack {
+	border-radius: 5px;
+	padding: 5px;
+}
+
+.footer-thanks-message {
+	margin: 2rem 0 4rem 0;
+}
+
+footer.page-footer {
+	margin: 0;
+}
