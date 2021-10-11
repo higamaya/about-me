@@ -38,12 +38,17 @@
 		button.css('display', 'inline-block');
 		button.css('opacity', '0');
 		button.css('visibility', 'visible');
+		var button_icon = button.find('.material-icons');
+		button_icon.removeClass('pulse');
 		anime({
 			targets: '#index-banner-button',
 			opacity: [0, 1],
 			translateX: [-300, 0],
 			duration: 1500,
-			delay: 3150
+			delay: 3150,
+			complete: function(anim) {
+				button_icon.addClass('pulse');
+			}
 		});
 	};
 	doBannerAnimation();

@@ -175,6 +175,9 @@ table.fit {
 #index-banner-button {
 	visibility: hidden;
 }
+#index-banner-button > .pulse::before {
+	background-color: rgba(255, 255, 255, 0.17);
+}
 
 #scroll-down-button-block {
 	margin: 3rem 0;
