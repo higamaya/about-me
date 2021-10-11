@@ -20,7 +20,28 @@
 .collapsible {
 	width: 100%;
 }
+.collapsible-header {
+	display: block;
+	color: rgba(80, 80, 80, 0.85);
+}
+.collapsible-header * {
+	vertical-align: middle;
+}
+.collapsible-header:hover {
+	background-color: #f0f0f0;
+	color: inherit;
+}
+li.active > .collapsible-header {
+	color: inherit;
+}
+li.active > .collapsible-header > .expand_more {
+	display: none;
+}
+li:not(.active) > .collapsible-header > .expand_less {
+	display: none;
+}
 .collapsible-body {
+	background-color: rgba(255, 255, 255, 0.67);
 	padding: 1rem;
 }
 
