@@ -38,12 +38,12 @@
 
 #twitter-link-contact {
 	display: inline-block;
-	margin: 5rem 0;
+	margin-top: 5rem;
 	padding: 1rem 2rem;
-	border-radius: 2rem;
+	border-radius: 1.85rem;
 	background-color: #1d9bf0;
 	color: #fff;
-	font-size: 2rem;
+	font-size: 1.7rem;
 	line-height: 1;
 }
 
