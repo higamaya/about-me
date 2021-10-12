@@ -26,9 +26,9 @@
     "postinstall": "run-s postinstall:*",
     "build:minify_css": "minify src/assets/css/style.css > src/assets/css/style.min.css",
     "build:minify_js": "minify src/assets/js/script.js > src/assets/js/script.min.js",
-    "build:clean": "rimraf dist",
-    "build:copy": "cpx \"src/**\" dist -v",
-    "build:use_min": "rexreplace 'assets/(.+)\\.(css|js)' 'assets/$1.min.$2' dist/**/*.html",
+    "build:clean": "rimraf docs",
+    "build:copy": "cpx \"src/**\" docs -v",
+    "build:use_min": "rexreplace 'assets/(.+)\\.(css|js)' 'assets/$1.min.$2' docs/**/*.html",
     "build": "run-s build:*",
     "env": "node -e 'console.log(process.env)' | grep npm"
   },
