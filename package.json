@@ -10,9 +10,27 @@
     "jquery": "^3.6.0",
     "materialize-css": "^1.0.0-rc.2"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "cpx": "^1.5.0",
+    "minify": "^8.0.2",
+    "npm-run-all": "^4.1.5",
+    "rexreplace": "^7.0.3",
+    "rimraf": "^3.0.2"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall:copy_fontawesome": "cpx \"node_modules/@fortawesome/fontawesome-free/{css,webfonts}/*\" src/assets/fontawesome -v",
+    "postinstall:copy_jquery": "cpx \"node_modules/jquery/dist/jquery{,.min}.js\" src/assets/js -v",
+    "postinstall:copy_materialize": "cpx \"node_modules/materialize-css/dist/**\" src/assets -v",
+    "postinstall:copy_animejs": "cpx \"node_modules/animejs/lib/anime{,.min}.js\" src/assets/js -v",
+    "postinstall:copy_chart.js": "cpx \"node_modules/chart.js/dist/chart{,.min}.js\" src/assets/js -v",
+    "postinstall": "run-s postinstall:*",
+    "build:minify_css": "minify src/assets/css/style.css > src/assets/css/style.min.css",
+    "build:minify_js": "minify src/assets/js/script.js > src/assets/js/script.min.js",
+    "build:clean": "rimraf dist",
+    "build:copy": "cpx \"src/**\" dist -v",
+    "build:use_min": "rexreplace 'assets/(.+)\\.(css|js)' 'assets/$1.min.$2' dist/**/*.html",
+    "build": "run-s build:*",
+    "env": "node -e 'console.log(process.env)' | grep npm"
   },
   "repository": {
     "type": "git",
