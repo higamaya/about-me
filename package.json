@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "cpx": "^1.5.0",
+    "http-server": "^13.0.2",
     "minify": "^8.0.2",
     "npm-run-all": "^4.1.5",
     "rexreplace": "^7.0.3",
@@ -30,6 +31,7 @@
     "build:copy": "cpx \"src/**\" docs -v",
     "build:use_min": "rexreplace 'assets/(.+)\\.(css|js)' 'assets/$1.min.$2' docs/**/*.html",
     "build": "run-s build:*",
+    "server": "http-server docs",
     "env": "node -e 'console.log(process.env)' | grep npm"
   },
   "repository": {
