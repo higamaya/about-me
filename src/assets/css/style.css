@@ -221,10 +221,11 @@ table.fit {
 }
 
 #last-updated-date {
-	position: absolute;
-	bottom: 0;
 	width: 100%;
 	text-align: center;
+}
+#last-updated-date span {
+	line-height: 3em;
 }
 
 .history tr td {
