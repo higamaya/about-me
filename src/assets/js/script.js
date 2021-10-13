@@ -57,7 +57,7 @@
 		$('a[href^="#"]').on('click', function () {
 			var tooltip = this.classList.contains('tooltipped') ? M.Tooltip.getInstance($(this)) : null;
 			let href = $(this).attr('href');
-			let target = $(isTop = href == '#' ? 'html' : href);
+			let target = $(href == '#' ? 'html' : href);
 			if (target.length > 0) {
 				var scrollTop = target.offset().top - $('.navbar-fixed').height();
 				anime({

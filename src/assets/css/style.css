@@ -1,43 +1,40 @@
-.material-icons {
-	font-size: inherit;
+:root {
+	--brand-color: #40a798;
+	--twitter-color: #1d9bf0;
 }
 
 .brand-color {
-	background-color: #40a798;
+	background-color: var(--brand-color);
 }
 .brand-color-text {
-	color: #40a798;
+	color: var(--brand-color);
+}
+
+.material-icons {
+	font-size: inherit;
 }
 
 .container {
 	max-width: 900px;
 }
 
-.nowrap {
-	white-space: nowrap;
-}
-
 .collapsible {
 	width: 100%;
 }
 .collapsible-header {
-	display: block;
 	color: rgba(80, 80, 80, 0.85);
-}
-.collapsible-header * {
-	vertical-align: middle;
 }
 .collapsible-header:hover {
 	background-color: #f0f0f0;
 	color: inherit;
 }
-li.active > .collapsible-header {
+.active > .collapsible-header {
 	color: inherit;
 }
-li.active > .collapsible-header > .expand_more {
+.active > .collapsible-header > .expand_more {
 	display: none;
 }
-li:not(.active) > .collapsible-header > .expand_less {
+:not(.active) > .collapsible-header > .expand_less {
 	display: none;
 }
 .collapsible-body {
@@ -46,38 +43,37 @@ li:not(.active) > .collapsible-header > .expand_less {
 }
 
 .twitter-icon {
-	color: #1d9bf0;
+	color: var(--twitter-color);
 }
 
 #twitter-link-nav {
 	transform: translateX(15px);
 }
-#twitter-link-nav i.fab.fa-twitter-square {
-	display: inline;
-	vertical-align: middle;
-}
 
 #twitter-link-contact {
 	display: inline-block;
-	margin-top: 5rem;
+	margin-bottom: 2rem;
 	padding: 1rem 2rem;
 	border-radius: 1.85rem;
-	background-color: #1d9bf0;
+	background-color: var(--twitter-color);
 	color: #fff;
 	font-size: 1.7rem;
 	line-height: 1;
 }
 
 #logo-container {
+	display: flex;
+	align-items: center;
+	gap: 0 0.5rem;
+	flex-wrap: nowrap;
 	height: 100%;
 }
 #logo-container img {
-	margin: 15px 0;
 	width: auto;
 	height: calc(100% - 30px);
 }
 #logo-container span {
-	vertical-align: top;
+	white-space: nowrap;
 }
 
 nav ul a {
@@ -154,9 +150,8 @@ body .screen-container  {
 .screen-container-content {
 	display: flex;
 	flex-direction: column;
-	margin-top: auto;
-	margin-bottom: auto;
-	height: auto;
+	justify-content: space-evenly;
+	flex-grow: 1;
 }
 
 .parallax-container {
@@ -171,11 +166,10 @@ body .screen-container  {
 .row {
 	display: flex;
 	flex-wrap: wrap;
-	align-items: stretch;
 }
 .row .col {
 	display: flex;
-	align-items: flex-start;
+	align-items: start;
 }
 .row .col:not(*[class*="offset-"]) {
 	margin-left: 0;
@@ -251,9 +245,6 @@ table.fit {
 }
 
 .footer-thanks-message {
-	margin: 2rem 0 4rem 0;
-}
-
-footer.page-footer {
-	margin: 0;
+	margin-top: 2rem;
+	margin-bottom: 4rem;
 }
