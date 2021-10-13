@@ -49,6 +49,10 @@
 #twitter-link-nav {
 	transform: translateX(15px);
 }
+#twitter-link-nav i {
+	height:auto;
+	vertical-align: middle;
+}
 
 #twitter-link-contact {
 	display: inline-block;
@@ -64,7 +68,6 @@
 #logo-container {
 	display: flex;
 	align-items: center;
-	gap: 0 0.5rem;
 	flex-wrap: nowrap;
 	height: 100%;
 }
@@ -73,6 +76,7 @@
 	height: calc(100% - 30px);
 }
 #logo-container span {
+	margin-left: 0.5rem;
 	white-space: nowrap;
 }
 
