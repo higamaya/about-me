@@ -10,7 +10,7 @@
 	// Banner animation
 	var doBannerAnimation = function () {
 		// Animate the name
-		let name = $('#index-banner-name');
+		var name = $('#index-banner-name');
 		name.html(name.text().replace(/\S/g, '<span class="anime-letter" style="opacity: 0;">$&</span>'));
 		name.css('visibility', 'visible');
 		anime({
@@ -18,10 +18,13 @@
 			opacity: [0, 1],
 			easing: "easeInOutQuad",
 			duration: 2000,
-			delay: (el, i) => 300 + 150 * (i + 1)
+			delay: (el, i) => 300 + 150 * (i + 1),
+			complete: function(anim) {
+				name.html(name.text());
+			}
 		});
 		// Animate the description
-		let description = $('#index-banner-description');
+		var description = $('#index-banner-description');
 		description.html(description.text().replace(/\S/g, '<span class="anime-letter" style="display: inline-block; opacity: 0;">$&</span>'));
 		description.css('visibility', 'visible');
 		anime({
@@ -31,7 +34,10 @@
 			translateZ: 0,
 			easing: "easeOutExpo",
 			duration: 950,
-			delay: (el, i) => 2000 + 30 * i
+			delay: (el, i) => 2000 + 30 * i,
+			complete: function(anim) {
+				description.html(description.text());
+			}
 		});
 		// Animate the button
 		let button = $('#index-banner-button');
