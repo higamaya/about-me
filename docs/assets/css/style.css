@@ -1,6 +1,7 @@
 :root {
 	--brand-color: #40a798;
 	--twitter-color: #1d9bf0;
+	--github-color: #24292f;
 }
 
 .brand-color {
@@ -52,17 +53,6 @@
 #twitter-link-nav i {
 	height:auto;
 	vertical-align: middle;
-}
-
-#twitter-link-contact {
-	display: inline-block;
-	margin-bottom: 2rem;
-	padding: 1rem 2rem;
-	border-radius: 1.85rem;
-	background-color: var(--twitter-color);
-	color: #fff;
-	font-size: 1.7rem;
-	line-height: 1;
 }
 
 #logo-container {
@@ -254,6 +244,31 @@ table.fit {
 #my-tech-stack {
 	border-radius: 5px;
 	padding: 5px;
+}
+
+.featured-button {
+	display: inline-block;
+	padding: 1rem 1.5rem;
+	border-radius: 1.85rem;
+	min-width: 230px;
+	color: #fff;
+	font-size: 1.7rem;
+	line-height: 1;
+	white-space: nowrap;
+	text-align: center;
+}
+.featured-button .fab {
+	margin-right: 0.3em;
+}
+
+#github-link-repository {
+	margin: 2rem 0;
+	background-color: var(--github-color);
+}
+
+#twitter-link-contact {
+	margin-bottom: 2rem;
+	background-color: var(--twitter-color);
 }
 
 .footer-thanks-message {
