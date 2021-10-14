@@ -4,10 +4,10 @@
 }
 
 .brand-color {
-	background-color: var(--brand-color);
+	background-color: var(--brand-color) !important;
 }
 .brand-color-text {
-	color: var(--brand-color);
+	color: var(--brand-color) !important;
 }
 
 .material-icons {
@@ -15,7 +15,7 @@
 }
 
 .container {
-	max-width: 900px;
+	max-width: 980px;
 }
 
 .collapsible {
@@ -105,8 +105,8 @@ nav .sidenav-trigger {
 #floating-menu {
 	position: sticky;
 	top: calc(56px + 15px);
-	margin: 0 5px 0 5px;
-	padding: 0 0 0 5px;
+	margin: 1rem 5px;
+	padding: 1.5rem 0.5rem;
 }
 @media only screen and (min-width: 601px) {
 	#floating-menu {
@@ -124,19 +124,26 @@ nav .sidenav-trigger {
 }
 #return-to-top-button-container {
 	position: relative;
+	width: 100%;
 	height: 0;
 }
 #return-to-top-button {
 	position: absolute;
-	margin: 10px;
+	margin: 1rem 5px;
 	right: 0;
 	bottom: 0;
 }
 @media only screen and (max-width: 600px) {
-	#return-to-top-button-container {
-		width: 100%;
-	}
 	#return-to-top-button {
+		margin: 5px;
+	}
+}
+
+.next-button {
+	margin: 1rem 5px;
+}
+@media only screen and (max-width: 600px) {
+	.next-button {
 		margin: 5px;
 	}
 }
@@ -221,11 +228,11 @@ table.fit {
 }
 
 #last-updated-date {
-	width: 100%;
-	text-align: center;
-}
-#last-updated-date span {
 	line-height: 3em;
+}
+
+.profile-item {
+	width: 7em;
 }
 
 .history tr td {

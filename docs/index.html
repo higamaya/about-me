@@ -3,7 +3,6 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<meta name="description" content="フリーランスのソフトウェア開発者 Mitsunobu Yoneda のレジュメサイトです。" />
 
 	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
 	<link rel="stylesheet" href="assets/fontawesome/css/all.min.css" />
@@ -11,6 +10,7 @@
 	<link rel="stylesheet" href="assets/css/style.min.css" />
 
 	<title>HIGAMA屋</title>
+	<meta name="description" content="フリーランスのソフトウェア開発者 Mitsunobu Yoneda のレジュメサイトです。" />
 	<link rel="shortcut icon" href="assets/images/logo96x96.png" type="image/png" />
 	<link rel="apple-touch-icon" href="assets/images/logo96x96.png" type="image/png" />
 
@@ -49,20 +49,20 @@
 		<li><a href="#index-my-tech-stack">My Tech Stack</a></li>
 		<li><a href="#index-work-experience">Work Experience</a></li>
 		<li><a href="#index-additional-information">Additional Information</a></li>
-		<li><a href="#index-about-this-site">About This Site</a></li>
+		<li><a href="#index-tech-on-this-site">Tech on This Site</a></li>
 		<li><a href="#index-contact-information">Contact Information</a></li>
 	</ul>
 
 	<div id="index-banner" class="screen-container scrollspy brand-color white-text">
 		<div class="container screen-container-content">
 			<div class="section">
-				<h1 id="index-banner-name" class="index-banner-block header center">HIGAMA屋</h1>
-				<div class="index-banner-block row">
+				<h1 id="index-banner-name" class="header center index-banner-block">HIGAMA屋</h1>
+				<div class="row index-banner-block">
 					<div class="col s12 center">
 						<span id="index-banner-description" class="light">A freelance software developer</span>
 					</div>
 				</div>
-				<div class="index-banner-block row">
+				<div class="row index-banner-block">
 					<div class="col s12 center">
 						<a id="index-banner-button" class="tooltipped" data-position="top" data-tooltip="Check my profile" href="#index-profile">
 							<i class="material-icons white-text large circle pulse hoverable waves-effect waves-light" onclick="this.classList.remove('pulse');">arrow_circle_down</i>
@@ -71,26 +71,26 @@
 				</div>
 			</div>
 		</div>
-		<div id="last-updated-date">
-			<span class="light">Last updated on October 12th, 2021</span>
+		<div class="container screen-container-footer">
+			<div class="center">
+				<span id="last-updated-date" class="light">Last updated on October 12th, 2021</span>
+			</div>
 		</div>
 	</div>
 
 	<div id="floating-menu-target">
 
 		<div id="floating-menu-container">
-			<div id="floating-menu" class="white z-depth-1 hide-on-med-and-down">
-				<ul class="section table-of-contents">
-					<li><a href="#index-banner">Top</a></li>
-					<li><a href="#index-profile">Profile</a></li>
-					<li><a href="#index-languages">Languages</a></li>
-					<li><a href="#index-my-tech-stack">My Tech Stack</a></li>
-					<li><a href="#index-work-experience">Work Experience</a></li>
-					<li><a href="#index-additional-information">Additional Information</a></li>
-					<li><a href="#index-about-this-site">About This Site</a></li>
-					<li><a href="#index-contact-information">Contact Information</a></li>
-				</ul>
-			</div>
+			<ul id="floating-menu" class="table-of-contents white z-depth-1 hide-on-med-and-down">
+				<li><a href="#index-banner">Top</a></li>
+				<li><a href="#index-profile">Profile</a></li>
+				<li><a href="#index-languages">Languages</a></li>
+				<li><a href="#index-my-tech-stack">My Tech Stack</a></li>
+				<li><a href="#index-work-experience">Work Experience</a></li>
+				<li><a href="#index-additional-information">Additional Information</a></li>
+				<li><a href="#index-tech-on-this-site">Tech on This Site</a></li>
+				<li><a href="#index-contact-information">Contact Information</a></li>
+			</ul>
 		</div>
 	
 		<div id="index-profile" class="screen-container scrollspy parallax-container">
@@ -120,7 +120,7 @@
 									<div class="collapsible-header">
 										<i class="material-icons expand_more">expand_more</i>
 										<i class="material-icons expand_less">expand_less</i>
-										略歴
+										<span class="profile-item">略歴</span><span class="hide-on-small-only">Biography</span>
 									</div>
 									<div class="collapsible-body">
 										<table class="history">
@@ -156,7 +156,7 @@
 									<div class="collapsible-header">
 										<i class="material-icons expand_more">expand_more</i>
 										<i class="material-icons expand_less">expand_less</i>
-										資格
+										<span class="profile-item">資格</span><span class="hide-on-small-only">Qualifications</span>
 									</div>
 									<div class="collapsible-body">
 										<table class="history">
@@ -183,7 +183,7 @@
 									<div class="collapsible-header">
 										<i class="material-icons expand_more">expand_more</i>
 										<i class="material-icons expand_less">expand_less</i>
-										屋号の由来
+										<span class="profile-item">屋号の由来</span><span class="hide-on-small-only">Origin of my trade name</span>
 									</div>
 									<div class="collapsible-body">
 										<p>
@@ -197,6 +197,13 @@
 							</ul>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="container screen-container-footer hide-on-med-and-down">
+				<div class="center">
+					<a class="next-button btn-floating btn-large brand-color-text transparent hoverable waves-effect waves-light tooltipped" data-position="top" data-tooltip="Go to next" href="#index-languages">
+						<i class="material-icons brand-color-text white">arrow_downward</i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -261,6 +268,13 @@
 					</div>
 				</div>
 			</div>
+			<div class="container screen-container-footer hide-on-med-and-down">
+				<div class="center">
+					<a class="next-button btn-floating btn-large brand-color-text transparent hoverable waves-effect waves-light tooltipped" data-position="top" data-tooltip="Go to next" href="#index-my-tech-stack">
+						<i class="material-icons brand-color-text white">arrow_downward</i>
+					</a>
+				</div>
+			</div>
 		</div>
 
 		<div id="index-my-tech-stack" class="screen-container scrollspy parallax-container">
@@ -290,6 +304,13 @@
 					</div>
 				</div>
 			</div>
+			<div class="container screen-container-footer hide-on-med-and-down">
+				<div class="center">
+					<a class="next-button btn-floating btn-large brand-color-text transparent hoverable waves-effect waves-light tooltipped" data-position="top" data-tooltip="Go to next" href="#index-work-experience">
+						<i class="material-icons brand-color-text white">arrow_downward</i>
+					</a>
+				</div>
+			</div>
 		</div>
 
 		<div id="index-work-experience" class="screen-container scrollspy">
@@ -310,6 +331,13 @@
 							</div>
 						</div>
 					</div>
+				</div>
+			</div>
+			<div class="container screen-container-footer hide-on-med-and-down">
+				<div class="center">
+					<a class="next-button btn-floating btn-large brand-color-text transparent hoverable waves-effect waves-light tooltipped" data-position="top" data-tooltip="Go to next" href="#index-additional-information">
+						<i class="material-icons brand-color-text white">arrow_downward</i>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -366,11 +394,18 @@
 					</div>
 				</div>
 			</div>
+			<div class="container screen-container-footer hide-on-med-and-down">
+				<div class="center">
+					<a class="next-button btn-floating btn-large brand-color-text transparent hoverable waves-effect waves-light tooltipped" data-position="top" data-tooltip="Go to next" href="#index-tech-on-this-site">
+						<i class="material-icons brand-color-text white">arrow_downward</i>
+					</a>
+				</div>
+			</div>
 		</div>
 
-		<div id="index-about-this-site" class="screen-container scrollspy">
+		<div id="index-tech-on-this-site" class="screen-container scrollspy">
 			<div class="container screen-container-header">
-				<h3 class="header center brand-color-text">About This Site</h3>
+				<h3 class="header center brand-color-text">Tech on This Site</h3>
 			</div>
 			<div class="container screen-container-content">
 				<div class="section">
@@ -454,7 +489,14 @@
 					</div>
 				</div>
 			</div>
-		</div>
+			<div class="container screen-container-footer hide-on-med-and-down">
+				<div class="center">
+					<a class="next-button btn-floating btn-large brand-color-text transparent hoverable waves-effect waves-light tooltipped" data-position="top" data-tooltip="Go to next" href="#index-contact-information">
+						<i class="material-icons brand-color-text white">arrow_downward</i>
+					</a>
+				</div>
+			</div>
+			</div>
 
 		<div id="index-contact-information" class="screen-container scrollspy parallax-container">
 			<div class="parallax"><img class="parallax-background" src="assets/images/invisible.png" /></div>
@@ -490,8 +532,10 @@
 		</div>
 
 		<div id="return-to-top-button-target">
-			<div id="return-to-top-button-container" class="container">
-				<a id="return-to-top-button" class="btn-floating btn-large brand-color white-text hoverable waves-effect waves-light tooltipped" data-position="top" data-tooltip="Return to top" href="#"><i class="material-icons">arrow_upward</i></a>
+			<div id="return-to-top-button-container">
+				<a id="return-to-top-button" class="btn-floating btn-large brand-color white-text hoverable waves-effect waves-light tooltipped" data-position="left" data-tooltip="Return to top" href="#">
+					<i class="material-icons">arrow_upward</i>
+				</a>
 			</div>
 		</div>
 
