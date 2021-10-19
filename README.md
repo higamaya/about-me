@@ -94,8 +94,8 @@ In the case of Higama-ya, the site is hosted on GitHub Pages, so all we have to 
 
 # License
 
-Distributed under a custom license based on the MIT License.
-The difference from the MIT License is that image files are excluded from the license.
+Distributed under a custom license based on MIT License.
+The difference from MIT License is that image files are excluded from the license.
 See [LICENSE](LICENSE) for more details.
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
