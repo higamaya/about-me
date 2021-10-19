@@ -88,7 +88,7 @@ Note: The build script has only been confirmed to work on Linux. So it may not w
 Deploy the contents of `docs` directory to the server that hosts your site.
 The procedure depends on your hosting service.
 
-In the case of Higama-ya, the site is hosted on GitHub Pages, so all we have to do is push the commit of `docs` directory to the master branch.
+In the case of Higama-ya, the site is hosted on GitHub Pages, so all we have to do is push the commit of `docs` directory to the main branch.
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
