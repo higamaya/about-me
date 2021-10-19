@@ -1,7 +1,7 @@
 {
   "name": "about-me",
   "version": "1.0.0",
-  "description": "A webpage of portfolio for Higama-ya",
+  "description": "Resume Site of HIGAMA屋 (Higama-ya)",
   "main": "index.html",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^5.15.4",
@@ -41,7 +41,7 @@
     "url": "git+https://github.com/higamaya/about-me.git"
   },
   "author": "Higama-ya",
-  "license": "MIT",
+  "license": "Custom license based on MIT",
   "bugs": {
     "url": "https://github.com/higamaya/about-me/issues"
   },
