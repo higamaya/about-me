@@ -29,10 +29,11 @@ You can use this project as a template to make your own Resume Site.
 
 ## Setup
 
-#### 1. Fork and clone the repo
+#### 1. Duplicate the repo
 
-Fork this repo, and clone your forked repo.
-See [GitHub Docs](https://docs.github.com/en/get-started/quickstart/fork-a-repo) if you want to know the procedure.
+Duplicate this repo, and clone it to your computer.
+
+See [GitHub Docs](https://docs.github.com/en/repositories/creating-and-managing-repositories/duplicating-a-repository) if you want to know the way to duplicate a repo.
 
 #### 2. Install NPM packages
 
