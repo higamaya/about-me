@@ -2,6 +2,7 @@
 	--brand-color: #40a798;
 	--twitter-color: #1d9bf0;
 	--github-color: #24292f;
+	--base-font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", Meiryo, sans-serif;
 }
 
 .brand-color {
@@ -9,6 +10,16 @@
 }
 .brand-color-text {
 	color: var(--brand-color) !important;
+}
+
+html,
+button,
+input,
+optgroup,
+select,
+textarea {
+	/* Overwrite font-family defined in materialize.css */
+	font-family: var(--base-font-family);
 }
 
 html {
