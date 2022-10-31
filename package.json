@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "cpx": "^1.5.0",
+    "generate-license-file": "^2.0.0",
     "http-server": "^13.0.2",
     "imagemin-cli": "^7.0.0",
     "minify": "^8.0.2",
@@ -34,6 +35,7 @@
     "build:minify_images": "imagemin src/assets/images/* --out-dir=docs/assets/images",
     "build": "run-s build:*",
     "server": "http-server src",
+    "license": "generate-license-file --input package.json --output third-party-licenses.txt --overwrite --eol lf",
     "env": "node -e 'console.log(process.env)' | grep npm"
   },
   "repository": {
