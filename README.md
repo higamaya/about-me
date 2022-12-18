@@ -6,7 +6,7 @@
 
 # About
 
-Resume Site of HIGAMA屋 (Higama-ya), hosted on GitHub Pages, and can be accessed at url: https://about-me.higamaya.com/
+Resume Site of Higama-ya, hosted on GitHub Pages, and can be accessed at url: https://about-me.higamaya.com/
 
 This site uses Materialize front-end framework and is developed based on [Parallax Template](https://materializecss.com/templates/parallax-template/preview.html).
 
@@ -16,12 +16,12 @@ You can use this project as a template to make your own Resume Site.
 
 ## Built With
 
-* [Materialize](https://materializecss.com/)
-* [anime.js](https://animejs.com/)
-* [Chart.js](https://www.chartjs.org/)
-* [jQuery](https://jquery.com/)
-* [Material icons](https://fonts.google.com/icons)
-* [Font Awesome](https://fontawesome.com/)
+- [Materialize](https://materializecss.com/)
+- [anime.js](https://animejs.com/)
+- [Chart.js](https://www.chartjs.org/)
+- [jQuery](https://jquery.com/)
+- [Material icons](https://fonts.google.com/icons)
+- [Font Awesome](https://fontawesome.com/)
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
@@ -75,10 +75,10 @@ npm run build
 
 The following processes are executed.
 
-* Minify \*.css and \*.js files in `src` directory.
-* Copy all files from `src` to `docs` directory.
-* Edit \*.html files in `docs` directory, to refer min versions of \*.css and \*.js.
-* Minify image files such as \*.png in `docs` directory.
+- Minify \*.css and \*.js files in `src` directory.
+- Copy all files from `src` to `docs` directory.
+- Edit \*.html files in `docs` directory, to refer min versions of \*.css and \*.js.
+- Minify image files such as \*.png in `docs` directory.
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
@@ -104,4 +104,3 @@ See [LICENSE](LICENSE) for more details.
 Send a direct message to Higama-ya's twitter account: [@higama_ya](https://twitter.com/higama_ya)
 
 <p align="right">(<a href="#top">Back to top</a>)</p>
-
