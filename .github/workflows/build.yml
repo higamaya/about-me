@@ -1,0 +1,26 @@
+name: Build
+on:
+  push:
+    branches: [main]
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+        with:
+          fetch-depth: 0
+      - name: Switch to `github-pages` branch, and rebase it on top of `origin/main`
+        run: git switch -c github-pages
+      - name: Install
+        run: npm ci
+      - name: Build
+        run: npm run build
+      - name: Copy CNAME
+        run: cp CNAME docs/
+      - name: Commit docs
+        run: |
+          git config --local user.name "${{ github.event.pusher.name }}"
+          git config --local user.email "${{ github.event.pusher.email }}"
+          git add --force docs
+          git commit -m "update docs (published by GitHub Pages)"
+          git push --force --set-upstream origin github-pages

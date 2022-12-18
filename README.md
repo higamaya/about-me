@@ -80,6 +80,8 @@ The following processes are executed.
 - Edit \*.html files in `docs` directory, to refer min versions of \*.css and \*.js.
 - Minify image files such as \*.png in `docs` directory.
 
+Note: The build script has only been confirmed to work on Linux. So it may not work properly on Windows.
+
 <p align="right">(<a href="#top">Back to top</a>)</p>
 
 ## Deployment
