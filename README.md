@@ -51,7 +51,7 @@ All source files that make up the site, such as \*.html, \*.css and \*.js, are s
 
 #### 2. Test with browser
 
-Run local HTTP srever.
+Run local HTTP server.
 
 ```sh
 npm run server

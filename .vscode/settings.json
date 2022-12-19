@@ -1,5 +1,18 @@
 {
   "search.exclude": {
     "docs": true
-  }
+  },
+  "cSpell.words": [
+    "animejs",
+    "BDGP",
+    "fontawesome",
+    "fortawesome",
+    "HIGAMA",
+    "higamaya",
+    "Mitsunobu",
+    "rexreplace",
+    "sidenav",
+    "webfonts",
+    "Yoneda"
+  ]
 }

@@ -26,12 +26,14 @@ textarea {
 html {
   font-size: 14px;
   line-height: 1.7;
+  scroll-padding-top: calc(56px + 3rem);
 }
 
 @media only screen and (min-width: 601px) {
   html {
     font-size: 14.5px;
     line-height: 1.8;
+    scroll-padding-top: calc(64px + 3rem);
   }
 }
 
@@ -133,10 +135,22 @@ nav .sidenav-trigger {
 #floating-menu-container {
   position: absolute;
   top: 0;
-  right: 0;
+  left: min(95%, 980px + (100% - 980px) / 2);
   bottom: 0;
   width: 15%;
   z-index: 10;
+}
+
+@media only screen and (min-width: 601px) {
+  #floating-menu-container {
+    left: min(92.5%, 980px + (100% - 980px) / 2);
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #floating-menu-container {
+    left: min(85%, 980px + (100% - 980px) / 2);
+  }
 }
 
 #floating-menu {
@@ -169,24 +183,31 @@ nav .sidenav-trigger {
 
 #return-to-top-button {
   position: absolute;
-  margin: 1rem 5px;
+  margin: 5px;
   right: 0;
   bottom: 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 601px) {
   #return-to-top-button {
-    margin: 5px;
+    margin: 1rem 5px;
+  }
+}
+
+@media only screen and (min-width: 993px) {
+  #return-to-top-button {
+    left: min(85%, 980px + (100% - 980px) / 2);
+    right: 0;
   }
 }
 
 .next-button {
-  margin: 1rem 5px;
+  margin: 5px;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 601px) {
   .next-button {
-    margin: 5px;
+    margin: 1rem 5px;
   }
 }
 
@@ -261,7 +282,7 @@ table.fit {
 }
 
 #index-banner-description {
-  font-size: 2rem;
+  font-size: 1.3rem;
 }
 
 #index-banner-button>.pulse::before {
@@ -269,16 +290,16 @@ table.fit {
 }
 
 .index-banner-block {
-  margin: 5rem 0;
+  margin: 3.2rem 0;
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (min-width: 601px) {
   #index-banner-description {
-    font-size: 1.3rem;
+    font-size: 2rem;
   }
 
   .index-banner-block {
-    margin: 3.2rem 0;
+    margin: 5rem 0;
   }
 }
 
@@ -306,7 +327,7 @@ table.fit {
   border-bottom-color: rgba(255, 0, 0, 0.5);
 }
 
-#my-tech-stack {
+#tech-stack {
   border-radius: 5px;
   padding: 5px;
 }
