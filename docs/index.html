@@ -1,0 +1,639 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head prefix="og: http://ogp.me/ns#">
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+  <link rel="stylesheet" href="assets/css/materialize.min.css">
+  <link rel="stylesheet" href="assets/css/style.min.css">
+
+  <title>My Resume - HIGAMA屋</title>
+  <meta name="description" content="ソフトウェア開発者 Mitsunobu Yoneda のレジュメサイトです。私のことを手軽に知っていただくために、経歴やスキルを簡潔にまとめました。">
+  <link rel="shortcut icon" href="assets/images/logo_192x192.png" type="image/png">
+  <link rel="apple-touch-icon" href="assets/images/logo_192x192.png" type="image/png">
+
+  <meta property="og:title" content="My Resume - HIGAMA屋">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="https://about-me.higamaya.com/assets/images/icatch_1200x630.png">
+  <meta property="og:url" content="https://about-me.higamaya.com/">
+  <meta property="og:description" content="ソフトウェア開発者 Mitsunobu Yoneda のレジュメサイトです。私のことを手軽に知っていただくために、経歴やスキルを簡潔にまとめました。">
+  <meta property="og:locale" content="ja_JP">
+  <meta property="og:site_name" content="HIGAMA屋">
+
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:site" content="@higama_ya">
+
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-BDGP296P9F"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+    gtag('config', 'G-BDGP296P9F');
+  </script>
+</head>
+
+<body>
+  <div class="navbar-fixed">
+    <nav class="white">
+      <div class="container nav-wrapper">
+        <a id="logo-container" href="https://higamaya.com/" class="brand-logo">
+          <img src="assets/images/logo_192x192.png" width="192" height="192" alt="brand logo">
+          <span class="brand-color-text">HIGAMA屋</span>
+        </a>
+        <ul class="right">
+          <li>
+            <a id="twitter-link-nav" class="tooltipped" data-position="left" data-tooltip="@higama_ya"
+              href="https://twitter.com/higama_ya">
+              <i class="fab fa-twitter-square twitter-icon"></i>
+            </a>
+          </li>
+        </ul>
+        <a href="#nolink" data-target="nav-mobile" class="sidenav-trigger brand-color-text"><i
+            class="material-icons">menu</i></a>
+      </div>
+    </nav>
+  </div>
+
+  <ul id="nav-mobile" class="sidenav">
+    <li><a href="#index-banner">Top</a></li>
+    <li><a href="#index-profile">Profile</a></li>
+    <li><a href="#index-languages">Languages</a></li>
+    <li><a href="#index-tech-stack">Tech Stack</a></li>
+    <li><a href="#index-work-experience">Work Experience</a></li>
+    <li><a href="#index-passion">Passion</a></li>
+    <li><a href="#index-this-site">This Site</a></li>
+    <li><a href="#index-contact">Contact</a></li>
+  </ul>
+
+  <div id="index-banner" class="screen-container scrollspy brand-color white-text">
+    <div class="container screen-container-content">
+      <div class="section">
+        <h1 id="index-banner-name" class="header center index-banner-block">HIGAMA屋</h1>
+        <div class="row index-banner-block">
+          <div class="col s12 center">
+            <span id="index-banner-description" class="light">A software developer</span>
+          </div>
+        </div>
+        <div class="row index-banner-block">
+          <div class="col s12 center">
+            <a id="index-banner-button" class="tooltipped" data-position="top" data-tooltip="Check my profile"
+              href="#index-profile">
+              <i class="material-icons white-text large circle pulse hoverable waves-effect waves-light"
+                onclick="this.classList.remove('pulse');">arrow_circle_down</i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="container screen-container-footer">
+      <div class="center">
+        <span id="last-updated-date" class="light">Last updated on December 20st, 2024.</span>
+      </div>
+    </div>
+  </div>
+
+  <div id="floating-menu-target">
+
+    <div id="floating-menu-container" class="hide-on-med-and-down">
+      <ul id="floating-menu" class="table-of-contents white z-depth-1">
+        <li><a href="#index-banner">Top</a></li>
+        <li><a href="#index-profile">Profile</a></li>
+        <li><a href="#index-languages">Languages</a></li>
+        <li><a href="#index-tech-stack">Tech Stack</a></li>
+        <li><a href="#index-work-experience">Work Experience</a></li>
+        <li><a href="#index-passion">Passion</a></li>
+        <li><a href="#index-this-site">This Site</a></li>
+        <li><a href="#index-contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div id="index-profile" class="screen-container scrollspy parallax-container">
+      <div class="parallax"><img class="parallax-background" src="assets/images/invisible.png"
+          alt="Background image for parallax"></div>
+      <div class="container screen-container-header">
+        <h3 class="header center brand-color-text">Profile</h3>
+      </div>
+      <div class="container screen-container-content">
+        <div class="section">
+          <div class="row">
+            <div class="col s8 offset-s2 m4 offset-m1 l3 offset-l2 vertical-center">
+              <img class="responsive-img circle" src="assets/images/my.png" width="500" height="500"
+                alt="Mitsunobu Yoneda's personal logo">
+            </div>
+            <div class="col s12 m6 l5 vertical-center">
+              <p>
+                はじめまして！
+                Mitsunobu Yoneda と申します。
+                ソフトウェア開発者として活動していくうえで、自分のことを手軽に知っていただきたいと思い、このページを用意しました。
+                数分ほどお時間を頂戴いたしますが、最後までご覧いただければ幸いです。
+              </p>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2">
+              <ul class="collapsible">
+                <li>
+                  <div class="collapsible-header">
+                    <i class="material-icons expand_more">expand_more</i>
+                    <i class="material-icons expand_less">expand_less</i>
+                    <span class="profile-item">略歴</span><span class="hide-on-small-only">Biography</span>
+                  </div>
+                  <div class="collapsible-body">
+                    <table class="history">
+                      <tr>
+                        <td>1974 年</td>
+                        <td>石川県にて生誕。</td>
+                      </tr>
+                      <tr>
+                        <td>1993 年</td>
+                        <td>地元の高校を卒業後、神奈川県の大学へ進学し、情報工学を学ぶ。</td>
+                      </tr>
+                      <tr>
+                        <td>1997 年</td>
+                        <td>大学卒業と同時に職業訓練指導員（情報処理科）の免許を取得し、千葉県の高度ポリテクセンターで能力開発セミナーの開発・運営に従事。</td>
+                      </tr>
+                      <tr>
+                        <td>1998 年</td>
+                        <td>
+                          プログラミングの知識を活かしてモノづくりをしたいとの思いが募り、横浜市に本社を構える独立系 SIer へ転職。大手 IT
+                          ベンダーのサーバーアプリケーション・ミドルウェア製品の開発からキャリアをスタートし、車載機器メーカーのカーナビ開発、大手運送会社のデジタコ開発、大手メディア企業の Web
+                          サービス開発など、様々な分野で業務経験を積む。
+                        </td>
+                      </tr>
+                      <tr>
+                        <td>2017 年</td>
+                        <td>家業を手伝うために実家へ戻り、IT の現場から遠ざかる。
+                          家業は建築設備。
+                          建設現場で職人として修業を積むが、激務により体調を崩し、2020 年退職。</td>
+                      </tr>
+                      <tr>
+                        <td>2022 年</td>
+                        <td>約 6 年のブランクを経て、ソフトウェア開発者として IT 業界へ復帰するため、活動を開始。</td>
+                      </tr>
+                    </table>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">
+                    <i class="material-icons expand_more">expand_more</i>
+                    <i class="material-icons expand_less">expand_less</i>
+                    <span class="profile-item">資格</span><span class="hide-on-small-only">Qualifications</span>
+                  </div>
+                  <div class="collapsible-body">
+                    <table class="history">
+                      <tr>
+                        <td>1999 年</td>
+                        <td>第一種情報処理技術者試験</td>
+                      </tr>
+                      <tr>
+                        <td>2002 年</td>
+                        <td>XML マスター</td>
+                      </tr>
+                      <tr>
+                        <td>2003 年</td>
+                        <td>UML ゴールドレベル技術者（デザインパターン分野）</td>
+                      </tr>
+                      <tr>
+                        <td>2011年</td>
+                        <td><s>Project Management Professional</s>（※ 2014 年更新、2017 年失効）</td>
+                      </tr>
+                      <tr>
+                        <td>2024 年</td>
+                        <td>Oracle Certified Java Programmer, Gold SE 11 認定資格</td>
+                      </tr>
+                    </table>
+                  </div>
+                </li>
+                <li>
+                  <div class="collapsible-header">
+                    <i class="material-icons expand_more">expand_more</i>
+                    <i class="material-icons expand_less">expand_less</i>
+                    <span class="profile-item">屋号の由来</span><span class="hide-on-small-only">Origin of my business
+                      name</span>
+                  </div>
+                  <div class="collapsible-body">
+                    <p>
+                      屋号の “HIGAMA屋” は、実家の所在地の町名に由来します。
+                    </p>
+                    <p>
+                      HIGAMA は、私の現住所でもあります。（実家住まいの独身です。）
+                    </p>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container screen-container-footer hide-on-med-and-down">
+        <div class="center">
+          <a class="next-button btn-floating btn-large brand-color-text transparent hoverable waves-effect waves-light tooltipped"
+            data-position="top" data-tooltip="Go to next" href="#index-languages">
+            <i class="material-icons brand-color-text white">arrow_downward</i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="index-languages" class="screen-container scrollspy">
+      <div class="container screen-container-header">
+        <h3 class="header center brand-color-text">Languages</h3>
+      </div>
+      <div class="container screen-container-content">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2">
+              <div>
+                <p>
+                  プログラミング言語は何が使えるの？というのが最も気になるポイントかと思いますので、まずは各種プログラミング言語の習熟度をまとめてみました。
+                </p>
+                <p>
+                  習熟度は 5 段階評価で、3 以上は実務経験があるもの、2 以下は実務経験はないけど触ったことがあるもの、という基準で区切ってあります。下記の図・表の赤いラインがその境界です。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m6 center vertical-center">
+              <canvas id="chart-languages" width="280" height="280"></canvas>
+              <!-- A dataset to be loaded from JavaScript to draw the radar chart. -->
+              <script id="chart-languages-data" type="application/json">
+                {
+                  "Java" : 5,
+                  "C++ (C++98)" : 5,
+                  "SQL" : 4,
+                  "PHP" : 2,
+                  "HTML/CSS" : 4,
+                  "JavaScript" : 4
+                }
+              </script>
+            </div>
+            <div class="col s12 m6 center vertical-center">
+              <table class="fit">
+                <tr>
+                  <th class="center">習熟度</th>
+                  <th class="center">実務経験</th>
+                  <th class="languages-level-description">評価の目安</th>
+                </tr>
+                <tr>
+                  <td class="center">5</td>
+                  <td class="center"><i class="material-icons">check</i></td>
+                  <td class="languages-level-description">マスター</td>
+                </tr>
+                <tr>
+                  <td class="center">4</td>
+                  <td class="center"><i class="material-icons">check</i></td>
+                  <td class="languages-level-description">自由に駆使できる</td>
+                </tr>
+                <tr id="languages-level-border">
+                  <td class="center">3</td>
+                  <td class="center"><i class="material-icons">check</i></td>
+                  <td class="languages-level-description">実務で使える</td>
+                </tr>
+                <tr>
+                  <td class="center">2</td>
+                  <td class="center">－</td>
+                  <td class="languages-level-description">それなりに使える</td>
+                </tr>
+                <tr>
+                  <td class="center">1</td>
+                  <td class="center">－</td>
+                  <td class="languages-level-description">軽く触ったことがある</td>
+                </tr>
+              </table>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2">
+              <div>
+                <p>
+                  Java は、実務経験が 10 年と一番長く、もっとも精通している言語です。
+                </p>
+                <p>
+                  C++ は、もっとも好きな言語です。
+                  仮想関数テーブルの仕組みを語れる程度にはマスターしました。
+                  学生時代に最初にマスターした言語なので、かなり思い入れがあります。
+                  Java に次いで得意です。<br>
+                  ただし、最後に実務で使ったのが 2009 年とかなり古いので、今後、最新仕様をキャッチアップしたいと考えています。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container screen-container-footer hide-on-med-and-down">
+        <div class="center">
+          <a class="next-button btn-floating btn-large brand-color-text transparent hoverable waves-effect waves-light tooltipped"
+            data-position="top" data-tooltip="Go to next" href="#index-tech-stack">
+            <i class="material-icons brand-color-text white">arrow_downward</i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="index-tech-stack" class="screen-container scrollspy parallax-container">
+      <div class="parallax"><img class="parallax-background" src="assets/images/invisible.png"
+          alt="Background image for parallax"></div>
+      <div class="container screen-container-header">
+        <h3 class="header center brand-color-text">Tech Stack</h3>
+      </div>
+      <div class="container screen-container-content">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2">
+              <div>
+                <p>
+                  使用経験のある技術・ツール等の一覧です。<a href="https://stackshare.io/higamaya/my-stack">StackShare で作成したもの</a> を埋め込みました。
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col s12 m10 offset-m1">
+              <div>
+                <p id="tech-stack" class="z-depth-1 brand-color">
+                  <a data-theme="light" data-layers="1,2,3,4" data-stack-embed="true"
+                    href="https://embed.stackshare.io/stacks/embed/7980cfa13910255ca623083ff86a47"></a>
+                  <script async src="https://cdn1.stackshare.io/javascripts/client-code.js" charset="utf-8"></script>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container screen-container-footer hide-on-med-and-down">
+        <div class="center">
+          <a class="next-button btn-floating btn-large brand-color-text transparent hoverable waves-effect waves-light tooltipped"
+            data-position="top" data-tooltip="Go to next" href="#index-work-experience">
+            <i class="material-icons brand-color-text white">arrow_downward</i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="index-work-experience" class="screen-container scrollspy">
+      <div class="container screen-container-header">
+        <h3 class="header center brand-color-text">Work Experience</h3>
+      </div>
+      <div class="container screen-container-content">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2">
+              <div>
+                <p>
+                  職務経歴（案件単位の実績）につきましては、ご要望をいただいた方に個別に開示する方式とさせていただいております。
+                </p>
+                <p>
+                  職務経歴の閲覧をご希望の場合は、お手数ですがその旨ご連絡くださいますようお願いいたします。
+                  連絡先は、<a href="#index-contact">本ページの末尾</a> に記載しております。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container screen-container-footer hide-on-med-and-down">
+        <div class="center">
+          <a class="next-button btn-floating btn-large brand-color-text transparent hoverable waves-effect waves-light tooltipped"
+            data-position="top" data-tooltip="Go to next" href="#index-passion">
+            <i class="material-icons brand-color-text white">arrow_downward</i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="index-passion" class="screen-container scrollspy parallax-container">
+      <div class="parallax"><img class="parallax-background" src="assets/images/invisible.png"
+          alt="Background image for parallax"></div>
+      <div class="container screen-container-header">
+        <h3 class="header center brand-color-text">Passion</h3>
+      </div>
+      <div class="container screen-container-content">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2">
+              <div>
+                <h5 class="header center">新たな技術への挑戦</h5>
+                <p>
+                  いま現在は、Java の最新仕様のキャッチアップなど、6 年のブランクを埋めるので精一杯というのが正直なところですが、
+                  将来的には、未経験の言語やツールにも積極的にチャレンジして、自分のスキルセットをアップデートしていきたいと考えています。
+                </p>
+                <p>
+                  直近の計画としては、C++ の最新仕様のキャッチアップ、および新たな言語として Rust を習得する予定です。
+                </p>
+                <p>
+                  特に Rust については、Linux カーネルに採用されたり、Android においてメモリ関連の脆弱性の作り込み防止に Rust が大きく貢献していることを Google
+                  が報告するなど、注目が高まっています。
+                  私もはやく一端の Rust 使いになれるよう励む所存です。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2">
+              <div>
+                <h5 class="header center">“ソフトウェア開発者” に込めた想い</h5>
+                <p>
+                  私は意図的に “ソフトウェア開発者” と名乗っています。
+                  これには、単純にプログラミングが大好きで、生涯プログラマーでいたい、という気持ちが含まれています。
+                </p>
+                <p>
+                  もちろん、ただコードを書くだけの人になるつもりはなく、専門知識を駆使して顧客の課題を解決する技術者としての視点は大事にしたい。
+                  そういう立ち位置だと、“ITエンジニア” とか “システムエンジニア” なんて呼び方が一般的だと思いますが、
+                  “エンジニア” って名乗るのは自分には高尚すぎて少々恥ずかしい。
+                  かといって “プログラマー” では狭すぎる。
+                </p>
+                <p>
+                  そんなこんなで色々と考えた結果、『プログラミングスキルを活かして人の役に立つもの（ソフトウェア）を作りたい（開発したい）』という想いを込めて
+                  “ソフトウェア開発者” と名乗ることにしました。
+                </p>
+                <p>
+                  ちょっと前までは、プログラマー 35 歳定年説なんていうものがささやかれたりして、私もあきらめかけていた時期がありました。
+                  6 年前に IT 業界を去って実家へ戻ったのには様々な事情があるのですが、その中の一つに、このあきらめの気持ちもありました。
+                  ですが、今は、生涯プログラマーでいることをあきらめずに、年を重ねても働ける限りはソフトウェア開発者として活動していきたい、そう考えています。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container screen-container-footer hide-on-med-and-down">
+        <div class="center">
+          <a class="next-button btn-floating btn-large brand-color-text transparent hoverable waves-effect waves-light tooltipped"
+            data-position="top" data-tooltip="Go to next" href="#index-this-site">
+            <i class="material-icons brand-color-text white">arrow_downward</i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="index-this-site" class="screen-container scrollspy">
+      <div class="container screen-container-header">
+        <h3 class="header center brand-color-text">This Site</h3>
+      </div>
+      <div class="container screen-container-content">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2">
+              <div>
+                <h5 class="header center">CSS フレームワーク</h5>
+                <p>
+                  本サイトの UI デザインは、<a href="https://materializecss.com/">Materialize</a>
+                  という CSS フレームワークを使用して作成しました。
+                  ソースコードは、Materialize 公式から提供されているスターターテンプレートのひとつ
+                  <a href="https://materializecss.com/templates/parallax-template/preview.html">Parallax Template</a>
+                  をベースにしています。
+                <p>
+                  制作にあたっては、ムダな装飾を避け、シンプルで分かりやすいデザインを心がけました。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2">
+              <div>
+                <h5 class="header center">その他のライブラリ</h5>
+                <p>
+                  Materialize の他に、以下のライブラリを使用しています。
+                </p>
+                <table>
+                  <tr>
+                    <th>ライブラリ</th>
+                    <th>使用箇所</th>
+                  </tr>
+                  <tr>
+                    <td><a href="https://animejs.com/">anime.js</a></td>
+                    <td>ページ冒頭のアニメーション<br>ページ内リンクのスムーススクロール</td>
+                  </tr>
+                  <tr>
+                    <td><a href="https://www.chartjs.org/">Chart.js</a></td>
+                    <td>Languages セクションのレーダーチャート</td>
+                  </tr>
+                </table>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2">
+              <div>
+                <h5 class="header center">ホスティング環境</h5>
+                <p>
+                  本サイトは GitHub Pages でホスティングしています。
+                  GitHub のリポジトリから直接ソースを取得して公開してくれるので、デプロイ関連の作業を省くことができます。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2">
+              <div>
+                <h5 class="header center">ソースの公開</h5>
+                <p>
+                  本サイトのソースコードは GitHub リポジトリで公開していますので、ご興味があれば、ご覧ください。
+                </p>
+                <p class="center">
+                  <a id="github-link-repository" class="featured-button z-depth-1 hoverable tooltipped"
+                    data-position="top" data-tooltip="Go to repository" href="https://github.com/higamaya/about-me">
+                    <i class="fab fa-github"></i>
+                    GitHub
+                  </a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container screen-container-footer hide-on-med-and-down">
+        <div class="center">
+          <a class="next-button btn-floating btn-large brand-color-text transparent hoverable waves-effect waves-light tooltipped"
+            data-position="top" data-tooltip="Go to next" href="#index-contact">
+            <i class="material-icons brand-color-text white">arrow_downward</i>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div id="index-contact" class="screen-container scrollspy parallax-container">
+      <div class="parallax"><img class="parallax-background" src="assets/images/invisible.png"
+          alt="Background image for parallax"></div>
+      <div class="container screen-container-header">
+        <h3 class="header center brand-color-text">Contact</h3>
+      </div>
+      <div class="container screen-container-content">
+        <div class="section">
+          <div class="row">
+            <div class="col s12 m10 offset-m1 l8 offset-l2">
+              <div>
+                <p>
+                  最後までご覧いただきありがとうございました。
+                  私について少しでも興味を持っていただけたなら嬉しい限りです。
+                </p>
+                <p>
+                  もしコンタクトをご希望の場合には、お手数ですが下記の Twitter アカウントへダイレクトメッセージをお送りいただければと存じます。
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="section">
+          <div class="row">
+            <div class="col s12 center">
+              <a id="twitter-link-contact" class="featured-button z-depth-1 hoverable tooltipped" data-position="top"
+                data-tooltip="Contact me" href="https://twitter.com/higama_ya">
+                <i class="fab fa-twitter"></i>
+                @higama_ya
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="return-to-top-button-target">
+      <div id="return-to-top-button-container">
+        <a id="return-to-top-button"
+          class="btn-floating btn-large brand-color white-text hoverable waves-effect waves-light tooltipped"
+          data-position="left" data-tooltip="Return to top" href="#">
+          <i class="material-icons">arrow_upward</i>
+        </a>
+      </div>
+    </div>
+
+  </div>
+
+  <footer class="page-footer brand-color white-text">
+    <div class="container">
+      <div class="section">
+        <h3 class="footer-thanks-message header center">Thank you for your visit!</h3>
+        <p class="footer-thanks-message center">
+          ありがとうございました！
+        </p>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+        &copy; 2022 Higama-ya
+      </div>
+    </div>
+  </footer>
+
+  <script>window.module = window.module || [];</script>
+  <script src="assets/js/jquery.min.js"></script>
+  <script src="assets/js/materialize.min.js"></script>
+  <script src="assets/js/anime.min.js"></script>
+  <script src="assets/js/chart.min.js"></script>
+  <script src="assets/js/script.min.js"></script>
+</body>
+
+</html>
